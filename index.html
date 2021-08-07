@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Lived by LOSDEV</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="icon" href="./assets/images/icon.png" sizes="32x32"> 
+    <link rel="fluid-icon" href="./assets/images/icon.png" title="Time Lived">
+</head>
+<body>
+    <header>
+        <div class="bg-header"></div>
+        <div class="container header">
+            <h1>Time Lived Preview</h1>
+            <div class="description">This is a Web App that visually shows you how long you've lived and how long you have left to live, assuming you're going to live 80 years</div>
+        </div>
+    </header>
+    <div>
+        <div class="container data-panel">
+            <div class="date" id="date">
+                <div class="text">Enter your date of birth to see what you have lived and what you still have to live</div>
+                <div class="error" id="error"></div>
+                <div class="inputs">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <label for="day">Day</label>
+                            <input type="number" name="day" id="day" value="" min="1" max="31" placeholder="1">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="month">Month</label>
+                            <input type="number" name="day" id="month" value="" min="1" max="12" placeholder="1">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="year">Year</label>
+                            <input type="number" name="day" id="year" value="" min="1940" max="2021" placeholder="1940">
+                        </div>
+                        <div class="col-md-9">
+                            <button onclick="createDots();">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="live-panel" id="live-panel">
+                <div class="text">
+                    <div class="dots ex-week-lived"></div> The green dots are the weeks you have lived<br>
+                    <div class="dots ex-year-lived"></div> The purple dots with numbers are the years you have lived<br>
+                    <div class="dots ex-week-tolive"></div> The gray dots are the years that you would have left to live<br>
+                    <div class="dots ex-year-tolive"></div> The gray dots with numbers are the years you have left to live
+                </div>
+                <div id="weeks" class="weeks"></div>
+                <div class="more-years" id="more-years">Oh, you look like you're in your 80s or more. Congratulations! 🥳🎉</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            Coded by LOSDEV with ❤️
+            <a href="https://github.com/losdevpath/time-lived/" target="_blank">
+                <img src="./assets/images/github-logo.png" class="github" />
+            </a>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/moment.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

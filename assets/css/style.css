@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#live-panel, #error { display: none; }
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(23deg, rgb(149 157 177) 0%, rgb(180 188 206) 100%);
+    margin: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-size: cover !important;
+    background-position: center !important;
+    margin-bottom: 50px;
+    z-index: -999;
+    position: relative;
+}
+
+header h1 {
+    font-size: 67px;
+    font-weight: bold;
+    color: rgb(255 255 255);
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 26%);
+}
+
+footer {
+    font-size: 17px;
+    color: rgb(232 235 243 / 50%);
+    text-align: center;
+    padding: 100px;
+    text-shadow: 0px 0px 16px rgb(69 82 113 / 37%);
+    font-family: 'Roboto';
+}
+
+label {
+    display: block !important;
+    font-weight: bold;
+    color: rgb(96 106 130);
+}
+
+.description {
+    color: rgb(255 255 255 / 72%);
+    font-size: 27px;
+}
+
+.bg-header {
+    background: linear-gradient(23deg, rgb(45 69 136 / 84%) 0%, rgb(74 150 118 / 89%) 100%);
+    width: 100%;
+    position: absolute;
+    height: 268px;
+    z-index: -1;
+}
+
+.header {
+    padding: 50px;
+    z-index: 9;
+    position: relative;
+}
+
+.weeks {
+    line-height: 0px !important;
+}
+
+.dots {
+    width: 19.600px;
+    height: 19.600px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.week-lived {
+    background: rgb(73 165 126);
+}
+
+.week-tolive {
+    background: rgb(74 88 115 / 43%);
+}
+
+.year-lived {
+    background: rgb(129 74 216);
+    font-size: 10px;
+    padding-top: 10px;
+    margin-bottom: 0px !important;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(214 214 214);
+    width: 30px;
+}
+
+.year-tolive {
+    background: rgb(102 113 136);
+    font-size: 10px;
+    padding-top: 10px;
+    margin-bottom: 0px !important;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(214 214 214);
+    width: 30px;
+}
+
+.data-panel {
+    background: rgb(255 255 255 / 25%);
+    min-height: 100px;
+    border-radius: 9px;
+    padding: 30px !important;
+    box-shadow: 0px 0px 26px rgb(81 93 121 / 21%);
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.data-panel .text {
+    color: rgb(125 135 158);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.inputs {
+    margin-top: 20px;
+}
+
+.inputs input[type="number"] {
+    outline: none;
+    box-shadow:none !important;
+    border:0 !important;
+}
+
+.inputs input[type="number"]::placeholder {
+    color: rgb(131 140 160) !important;
+}
+
+.inputs input[type="number"] {
+    background: rgb(166 174 193);
+    border: 0;
+    padding: 10px 15px;
+    color: rgb(89 100 125) !important;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.inputs button {
+    background: rgb(166 174 193);
+    border: 0;
+    padding: 10px 15px;
+    color: rgb(89 100 125) !important;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+input#day {
+    width: 76px;
+    text-align: center;
+    padding-right: 6px;
+}
+
+input#month {
+    width: 76px;
+    text-align: center;
+    padding-right: 6px;
+}
+
+input#year {
+    width: 86px;
+    text-align: center;
+    padding-right: 2px;
+}
+
+.error {
+    background: rgb(226 83 83);
+    padding: 10px;
+    border-radius: 4px;
+    color: rgb(255 197 197);
+    width: fit-content;
+}
+
+img.github {
+    display: block;
+    width: 50px;
+    margin: 27px auto 10px auto;
+    opacity: 0.8;
+}
+
+img.github:hover {
+    opacity: 1;
+}
+
+.inputs button {
+    background: rgb(64 72 90);
+    border: 0;
+    padding: 10px 24px;
+    color: rgb(182 188 202) !important;
+    border-radius: 4px;
+    font-size: 21px;
+    margin-top: 24px;
+    font-weight: normal;
+}
+
+.inputs button:hover {
+    background: rgb(55 158 106);
+    color: rgb(243 255 249) !important;
+}
+
+.live-panel .text {
+    margin-top: 44px;
+    background: rgb(166 174 193);
+    border-radius: 4px;
+    padding: 14px 20px;
+    font-size: 17px;
+    color: rgb(95 107 134);
+}
+
+.dots.ex-week-lived {
+    background: rgb(73 165 126);
+    margin-bottom: -4px;
+}
+
+.dots.ex-year-lived {
+    background: rgb(129 74 216);
+    margin-bottom: -4px;
+}
+
+.dots.ex-week-tolive {
+    background: rgb(74 88 115 / 43%);
+    margin-bottom: -4px;
+}
+
+.dots.ex-year-tolive {
+    background: rgb(102 113 136);
+    margin-bottom: -4px;
+}
+
+.more-years {
+    background: rgb(129 74 216);
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 25px;
+    color: rgb(255 255 255);
+    text-align: center;
+    font-size: 26px;
+}
