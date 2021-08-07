@@ -39,6 +39,10 @@ footer {
     font-family: 'Roboto';
 }
 
+footer b {
+    color: rgb(232 235 243 / 80%);
+}
+
 label {
     display: block !important;
     font-weight: bold;
@@ -247,4 +251,37 @@ img.github:hover {
     color: rgb(255 255 255);
     text-align: center;
     font-size: 26px;
+}
+
+.more-info {
+    margin-top: 11px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: rgb(67 76 97);
+}
+
+.more-info div {
+    display: inline-block;
+    margin-right: 14px;
+    background: rgb(166 174 193);
+    padding: 10px 10px 7px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.more-info div span {
+    color: rgb(255 255 255);
+    margin-left: 6px;
+}
+
+span#day-alive {
+    color: rgb(73 165 126);
+}
+
+.info {
+    color: rgb(90 100 123);
+    font-size: 31px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-top: 39px;
 }

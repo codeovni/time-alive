@@ -1,10 +1,14 @@
+let timerInterval;
 
 /* Select a random header background */
 var totalBackgrounds = 8;
 var backgroundRandom = Math.floor(Math.random() * totalBackgrounds) + 1;
 $("header").css({ background: "url(assets/images/backgrounds/" + backgroundRandom + ".jpg)" });
 
+/* Create dots */
 function createDots() {
+
+    if(timerInterval) { window.clearInterval(timerInterval); }
 
     $("#live-panel").fadeOut(100);
     $("#more-years").fadeOut(100);
@@ -42,9 +46,9 @@ function createDots() {
     }
 
     /* Set date with moment */
-    const birthDate = moment(new Date(year, month, day));
-    const futureDate = moment(new Date(year + yearsLiveEstimated, month, day));
-    const currentDate = moment().startOf('day');
+    let birthDate = moment(new Date(year, month, day));
+    let futureDate = moment(new Date(year + yearsLiveEstimated, month, day));
+    let currentDate = moment().startOf('day');
 
     /* Set total of weeks and years from birth date */
     let totalWeeks = moment.duration(currentDate.diff(birthDate)).asWeeks();
@@ -101,4 +105,36 @@ function createDots() {
 
     $("#weeks").html(html);
     $("#live-panel").fadeIn(1000);
+    
+    timerDate(year, month, day);
+
+    timerInterval = window.setInterval(() => {
+        timerDate(year, month, day);
+    }, 50);
+}
+
+/* Create timers */
+function timerDate(year, month, day) {
+
+    let birthDate = moment(new Date(year, month, day));
+    let currentDate = moment().startOf('second');
+
+    let seconds = currentDate.diff(birthDate, 'seconds');
+    let minutes = currentDate.diff(birthDate, 'minutes');
+    let hours = currentDate.diff(birthDate, 'hours');
+    let days = currentDate.diff(birthDate, 'days');
+    let weeks = currentDate.diff(birthDate, 'weeks');
+    let months= currentDate.diff(birthDate, 'months');
+    let years = currentDate.diff(birthDate, 'years');
+
+    $("#day-alive").html(days);
+
+    $("#years-lived").html(years);
+    $("#months-lived").html(months);
+    $("#weeks-lived").html(weeks);
+    $("#days-lived").html(days);
+    $("#hours-lived").html(hours);
+    $("#minutes-lived").html(minutes);
+    $("#seconds-lived").html(seconds);
+
 }
