@@ -48,7 +48,7 @@ function createDots() {
     /* Set date with moment */
     let birthDate = moment(new Date(year, month, day));
     let futureDate = moment(new Date(year + yearsLiveEstimated, month, day));
-    let currentDate = moment().startOf('day');
+    let currentDate = moment();
 
     /* Set total of weeks and years from birth date */
     let totalWeeks = moment.duration(currentDate.diff(birthDate)).asWeeks();
@@ -117,7 +117,7 @@ function createDots() {
 function timerDate(year, month, day) {
 
     let birthDate = moment(new Date(year, month, day));
-    let currentDate = moment().startOf('second');
+    let currentDate = moment();
 
     let seconds = currentDate.diff(birthDate, 'seconds');
     let minutes = currentDate.diff(birthDate, 'minutes');
