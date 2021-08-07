@@ -201,7 +201,7 @@
 }
 
 /* Mobile M 2 */
-@media only screen and (max-width: 392px) {
+@media only screen and (max-width: 396px) {
     header {
         text-align: center;
     }
