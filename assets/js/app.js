@@ -13,6 +13,7 @@ function createDots() {
 
     if(timerInterval) { window.clearInterval(timerInterval); }
 
+    $("#error").fadeOut(100);
     $("#live-panel").fadeOut(100);
     $("#more-years").fadeOut(100);
 
@@ -72,6 +73,7 @@ function createDots() {
             html += '<div class="dots week-lived"></div>';
             weeksCount++;
         } else {
+            $("#more-years").fadeIn(1000);
             break;
         }
     }
@@ -98,7 +100,6 @@ function createDots() {
             html += '<div class="dots week-tolive"></div>';
             futureWeeksCount++;
         } else {
-            $("#more-years").fadeIn(1000);
             break;
         }
     }
