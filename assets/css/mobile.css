@@ -134,58 +134,6 @@
         text-align: center;
     }
     .bg-header {
-        height: 428px !important;
-    }
-    .col-md-1 {
-        width: 18.33333333% !important;
-    }
-    .col-md-9 {
-        width: 41% !important;
-        margin-left: 10px;
-    }
-    .data-panel {
-        border-radius: 0px !important;
-    }
-    .dots {
-        width: 4.1px !important;
-        height: 12.3px !important;
-    }
-    .year-lived {
-        padding-top: 9px;
-        width: 25px !important;
-        padding-top: 7px !important;
-    }
-    .year-tolive {
-        padding-top: 9px;
-        width: 25px !important;
-        padding-top: 7px !important;
-    }
-    .more-info div {
-        margin-bottom: 11px !important;
-    }
-    .dots.ex-week-lived {
-        margin-bottom: -1px !important;
-    }
-    .dots.ex-year-lived {
-        margin-bottom: -1px !important;
-    }
-    .dots.ex-week-tolive {
-        margin-bottom: -1px !important;
-    }
-    .dots.ex-year-tolive {
-        margin-bottom: -1px !important;
-    }
-    .live-panel .text {
-        font-size: 14px !important;
-    }
-}
-
-/* Mobile L */
-@media only screen and (max-width: 425px) {
-    header {
-        text-align: center;
-    }
-    .bg-header {
         height: 468px !important;
     }
     .col-md-1 {
@@ -213,6 +161,78 @@
     }
     .dots {
         width: 5.6px !important;
+        height: 12.3px !important;
+        margin-right: 1px !important;
+    }
+    .year-lived {
+        padding-top: 9px !important;
+        width: 20px !important;
+        padding-top: 7px !important;
+    }
+    .year-tolive {
+        padding-top: 9px !important;
+        width: 20px !important;
+        padding-top: 7px !important;
+    }
+    .more-info div {
+        margin-bottom: 11px !important;
+    }
+    .dots.ex-week-lived {
+        margin-bottom: -1px !important;
+    }
+    .dots.ex-year-lived {
+        margin-bottom: -1px !important;
+    }
+    .dots.ex-week-tolive {
+        margin-bottom: -1px !important;
+    }
+    .dots.ex-year-tolive {
+        margin-bottom: -1px !important;
+    }
+    .live-panel .text {
+        font-size: 14px !important;
+    }
+    .info {
+        font-size: 23pxx !important;
+    }
+    footer b {
+        display: block !important;
+    }
+}
+
+/* Mobile M 2 */
+@media only screen and (max-width: 392px) {
+    header {
+        text-align: center;
+    }
+    .bg-header {
+        height: 468px !important;
+    }
+    .col-md-1 {
+        width: 30.333333% !important;
+    }
+    .col-md-9 {
+        width: 41% !important;
+        margin-left: 0px !important;
+    }
+    input#year {
+        padding-right: 16px !important;
+    }
+    input#day {
+        padding-right: 13px !important;
+    }
+    input#month {
+        padding-right: 13px !important;
+    }
+    .inputs button {
+        width: 304px !important;
+    }
+    .data-panel {
+        border-radius: 0px !important;
+        margin-top: -50px !important;
+    }
+    .dots {
+        width: 5px !important;
         height: 12.3px !important;
         margin-right: 1px !important;
     }
