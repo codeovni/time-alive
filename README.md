@@ -5,7 +5,7 @@ This is a Web App that visually shows you how long you've lived and how long you
 
 ### **To-Do** 📋
 - [x] Core javascript functions
-- [ ] Adapt the design to smartphones
+- [x] Adapt the design to smartphones
 
 ### 📚 Libs used
 - [Moment.js](https://momentjs.com/)
