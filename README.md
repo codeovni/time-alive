@@ -8,6 +8,6 @@ This is a Web App that visually shows you how long you've lived and how long you
 - [ ] Adapt the design to smartphones
 
 ### 📚 Libs used
-- [Moments.js](https://github.com/moment/moment/)
-- [Bootstrap](hhttps://github.com/twbs/bootstrap)
-- [jQuery](https://github.com/jquery/jquery)
+- [Moment.js](https://momentjs.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [jQuery](https://jquery.com/)
