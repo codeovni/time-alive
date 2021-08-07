@@ -1,5 +1,8 @@
 let timerInterval;
 
+/* Estimated years to live ~80 */
+let yearsLiveEstimated = 80;
+
 /* Select a random header background */
 var totalBackgrounds = 8;
 var backgroundRandom = Math.floor(Math.random() * totalBackgrounds) + 1;
@@ -12,9 +15,6 @@ function createDots() {
 
     $("#live-panel").fadeOut(100);
     $("#more-years").fadeOut(100);
-
-    /* Estimated years to live ~80 */
-    let yearsLiveEstimated = 80;
 
     /* Birth inputs */
     let day = $("input#day").val();
@@ -72,7 +72,6 @@ function createDots() {
             html += '<div class="dots week-lived"></div>';
             weeksCount++;
         } else {
-            $("#more-years").fadeIn(1000);
             break;
         }
     }
@@ -99,6 +98,7 @@ function createDots() {
             html += '<div class="dots week-tolive"></div>';
             futureWeeksCount++;
         } else {
+            $("#more-years").fadeIn(1000);
             break;
         }
     }
@@ -116,16 +116,16 @@ function createDots() {
 /* Create timers */
 function timerDate(year, month, day) {
 
-    let birthDate = moment(new Date(year, month, day));
+    let birthDate   = moment(new Date(year, month, day));
     let currentDate = moment();
 
-    let seconds = currentDate.diff(birthDate, 'seconds');
-    let minutes = currentDate.diff(birthDate, 'minutes');
-    let hours = currentDate.diff(birthDate, 'hours');
-    let days = currentDate.diff(birthDate, 'days');
-    let weeks = currentDate.diff(birthDate, 'weeks');
-    let months= currentDate.diff(birthDate, 'months');
-    let years = currentDate.diff(birthDate, 'years');
+    let seconds     = currentDate.diff(birthDate, 'seconds');
+    let minutes     = currentDate.diff(birthDate, 'minutes');
+    let hours       = currentDate.diff(birthDate, 'hours');
+    let days        = currentDate.diff(birthDate, 'days');
+    let weeks       = currentDate.diff(birthDate, 'weeks');
+    let months      = currentDate.diff(birthDate, 'months');
+    let years       = currentDate.diff(birthDate, 'years');
 
     $("#day-alive").html(days);
 
