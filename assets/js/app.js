@@ -111,7 +111,7 @@ function createDots() {
 
     timerInterval = window.setInterval(() => {
         timerDate(year, month, day);
-    }, 50);
+    }, 1000);
 }
 
 /* Create timers */
