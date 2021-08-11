@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: linear-gradient(23deg, rgb(149 157 177) 0%, rgb(180 188 206) 100%);
+    background: linear-gradient(23deg, rgb(189 195 210) 0%, rgb(221 224 230) 100%);
     margin: 0;
     height: 100%;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@ header h1 {
 
 footer {
     font-size: 17px;
-    color: rgb(232 235 243 / 50%);
+    color: rgb(119 129 152);
     text-align: center;
     padding: 100px;
     text-shadow: 0px 0px 16px rgb(69 82 113 / 37%);
@@ -42,7 +42,7 @@ footer {
 }
 
 footer b {
-    color: rgb(232 235 243 / 80%);
+    color: rgb(87 96 117);
 }
 
 label {
@@ -117,11 +117,11 @@ label {
 }
 
 .data-panel {
-    background: rgb(255 255 255 / 50%);
+    background: rgb(255 255 255 / 77%);
     min-height: 100px;
     border-radius: 9px;
     padding: 30px !important;
-    box-shadow: 0px 0px 26px rgb(81 93 121 / 21%);
+    box-shadow: 0px 0px 26px rgb(109 121 148 / 21%);
     font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -147,17 +147,7 @@ label {
     outline: none;
     box-shadow:none !important;
     border:1px solid rgb(0,0,0,0) !important;
-    background: rgb(232 234 239 / 98%);
-    padding: 10px 15px;
-    color: rgb(89 100 125) !important;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 21px;
-}
-
-.inputs button {
-    background: rgb(166 174 193);
-    border: 0;
+    background: rgb(225 228 236);
     padding: 10px 15px;
     color: rgb(89 100 125) !important;
     border-radius: 4px;
@@ -212,11 +202,13 @@ img.github:hover {
     margin-top: 34px;
     font-weight: normal;
     margin-left: 10px;
+    box-shadow: 0px 0px 5px rgb(72 117 146 / 50%);
 }
 
 .inputs button:hover {
     background: rgb(55 158 106);
     color: rgb(243 255 249) !important;
+    box-shadow: 0px 0px 5px rgb(76 181 128);
 }
 
 .live-panel .text {
